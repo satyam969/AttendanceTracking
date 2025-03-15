@@ -264,7 +264,7 @@ export default function Dashboard() {
                         {record.status.replace('_', ' ')}
                       </td>
                       <td className="p-2">
-                        {record.description}
+                      {(record as any).description}
                       </td>
                       <td className="p-2">
                         {record.screenshot_url && (

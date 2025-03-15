@@ -146,7 +146,7 @@ export default function AdminDashboard() {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Clock className="w-5 h-5" />
-                Today's Check-ins
+                Today Check-ins
               </CardTitle>
             </CardHeader>
             <CardContent>
