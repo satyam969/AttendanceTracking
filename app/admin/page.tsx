@@ -116,8 +116,9 @@ export default function AdminDashboard() {
   }
 
   const workUpdatesCount = records.filter(r => 
+    r.timestamp && 
     new Date(r.timestamp).toDateString() === new Date().toDateString() && 
-    r.status === 'work_update'
+    (r.status === 'check_in' || r.status === 'check_out')
   ).length;
 
   return (
